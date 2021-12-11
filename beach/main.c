@@ -18,7 +18,7 @@ static struct argp_option options[] = {
     //    {"verbose", 'v', 0, 0, "Produce verbose output"},
     {"search", 'd', 0, OPTION_DOC, "What package to search.", 0},
     {"quiet", 'q', 0, 0, "Don't produce any output", 1},
-    {"silent", 's', 0, OPTION_ALIAS, 1},
+    {"silent", 's', 0, OPTION_ALIAS, "", 1},
     {"deps", 'd', "DEPS", 0, "What dependencies to use. Separate with comma.", 1},
     {0}};
 

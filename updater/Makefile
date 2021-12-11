@@ -5,7 +5,7 @@ OUT	= updater
 LFLAGS	 = -lpthread
 CFLAGS = -O2
 
-all: beach
+all: updater
 
 beach: $(OBJS)
 	$(CC) ${CFLAGS} -o $@ $^ $(LFLAGS)

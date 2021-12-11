@@ -1,7 +1,7 @@
 OBJS	= main.o
 SOURCE	= main.c
 #HEADER	= foo.h
-OUT	= beach
+OUT	= updater
 LFLAGS	 = -lpthread
 CFLAGS = -O2
 

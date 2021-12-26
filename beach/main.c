@@ -1,9 +1,11 @@
 #include <stdlib.h>
 #include <argp.h>
-<<<<<<< HEAD
 #include <curl/curl.h>
 #include <string.h>
 #include <math.h>
+#include <time.h>
+#include <errno.h>
+#include "csv.h"
 
 // CONSTANTS
 
@@ -56,8 +58,6 @@ int progress_func(void *ptr, double TotalToDownload, double NowDownloaded,
 }
 
 // ARGP
-=======
->>>>>>> 85433a94da06581740b388c2f416ce1383dea164
 
 const char *argp_program_version =
     "beach pre-0.0.1";
@@ -111,13 +111,8 @@ parse_opt(int key, char *arg, struct argp_state *state)
 
     case ARGP_KEY_ARG:
         //if (state->arg_num >= 2)
-<<<<<<< HEAD
         /* Too many arguments. */
         //argp_usage(state);
-=======
-            /* Too many arguments. */
-            //argp_usage(state);
->>>>>>> 85433a94da06581740b388c2f416ce1383dea164
 
         arguments->args[state->arg_num] = arg;
 
@@ -137,11 +132,8 @@ parse_opt(int key, char *arg, struct argp_state *state)
 /* Our argp parser. */
 static struct argp argp = {options, parse_opt, args_doc, doc};
 
-<<<<<<< HEAD
 // Main function
 
-=======
->>>>>>> 85433a94da06581740b388c2f416ce1383dea164
 int main(int argc, char **argv)
 {
     struct arguments arguments;
@@ -157,9 +149,11 @@ int main(int argc, char **argv)
                0,
                0, &arguments);
 
-<<<<<<< HEAD
+    int otherargs = 0;
+
     if (strcmp(arguments.args[0], "update") == 0)
     {
+        otherargs = 1;
         printf("Fetching... \n");
 
         CURL *curl;
@@ -184,13 +178,108 @@ int main(int argc, char **argv)
             curl_easy_cleanup(curl);
             fclose(fp);
             char c[99999] = "";
-            sprintf(c, "cd %s && tar -xzf ./packages.csv.tar.gz", BEACH_FOLDER, BEACH_FOLDER);
+            sprintf(c, "cd %s && tar -xzf ./packages.csv.tar.gz", BEACH_FOLDER);
             if (system(c) == 0)
                 printf("\nFile downloaded successfully.\n");
         }
     }
 
-=======
->>>>>>> 85433a94da06581740b388c2f416ce1383dea164
+    if (otherargs == 0)
+    {
+        unsigned rowcount = 0;
+        unsigned colcount = 0;
+        char *row = NULL;
+        unsigned expRows = 0;
+        unsigned expCols = 0;
+        struct timespec t1, t2;
+        long diff = 0;
+
+        char *rows[9999];
+
+        char csvname[FILENAME_MAX] = "";
+        sprintf(csvname, "%s/packages.csv/packages.csv", BEACH_FOLDER);
+        //expRows = (unsigned)atoi(argv[2]);
+        //expCols = (unsigned)atoi(argv[3]);
+
+        CsvHandle handle = CsvOpen(csvname);
+        if (!handle)
+        {
+            puts("can not open csv file");
+            return -EINVAL;
+        }
+
+        /* measure */
+        clock_gettime(CLOCK_REALTIME, &t1);
+        //int collum = 0;
+        //int roww = 0;
+        while ((row = CsvReadNextRow(handle)))
+        {
+
+            //collum++;
+            const char *col = NULL;
+            rowcount++;
+            while ((col = CsvReadNextCol(row, handle)))
+            {
+                colcount++;
+                //printf("Collum: %d, Row: %d, Val: %s\n", colcount,rowcount, col);
+                if (colcount == 9)
+                {
+                    colcount = 0;
+                };
+                if (/*colcount == 1 && */ strcmp(col, arguments.args[0]) == '-')
+                {
+                    printf("Package found! r: %d, c: %d, %s\n", rowcount, colcount, col);
+
+                    //char i_dir[FILENAME_MAX];
+                    //sprintf(i_dir, "%s/PACKAGES/%s", BEACH_FOLDER, col);
+
+                    CURL *curl;
+                    FILE *fp;
+                    CURLcode res;
+                    char *url = "http://107.152.39.191:8080/example-pkg-sirobsidian.tar.gz";
+                    char outfilename[FILENAME_MAX];
+                    sprintf(outfilename, "%s/temp.tar.gz", BEACH_FOLDER);
+                    curl = curl_easy_init();
+                    if (curl)
+                    {
+                        fp = fopen(outfilename, "wb");
+                        curl_easy_setopt(curl, CURLOPT_URL, url);
+                        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
+                        curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);
+                        // Internal CURL progressmeter must be disabled if we provide our own callback
+                        curl_easy_setopt(curl, CURLOPT_NOPROGRESS, 0);
+                        // Install the callback function
+                        curl_easy_setopt(curl, CURLOPT_PROGRESSFUNCTION, progress_func);
+                        res = curl_easy_perform(curl);
+                        /* always cleanup */
+                        curl_easy_cleanup(curl);
+                        fclose(fp);
+                        char c[99999] = "";
+                        sprintf(c, "cd %s && tar -xzf ./temp.tar.gz", BEACH_FOLDER);
+                        if (system(c) == 0)
+                            printf("\nFile downloaded successfully.\n");
+                    }
+                }
+            }
+        }
+
+        clock_gettime(CLOCK_REALTIME, &t2);
+        CsvClose(handle);
+
+        /* analyze K={t2-t1} */
+        diff = (t2.tv_nsec - t1.tv_nsec) / 1000 / 1000;
+        diff += (t2.tv_sec - t1.tv_sec) * 1000;
+
+        /* print measurement in (ms) */
+        printf("time in milliseconds: %li (ms)\n", diff);
+
+        /* expectations */
+        //printf("rowcount: %u/%u, colcount: %u/%u\n",
+        //rowcount, expRows, colcount, expCols);
+
+        //assert(expRows == rowcount);
+        //assert(expCols == colcount);
+    }
+
     exit(0);
 }

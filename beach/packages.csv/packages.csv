@@ -1,0 +1,2 @@
+package-name ,author      ,version ,day ,month ,year ,archive                        ,install    ,information
+example-pkg  ,sirobdidian ,0.0.1   ,26  ,12    ,2021 ,example-pkg-sirobsidian.tar.gz ,install.sh ,information.csv

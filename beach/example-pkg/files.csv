@@ -1,0 +1,4 @@
+file-name       ,directory-path ,do-install ,install-to ,source ,binary ,script ,csv
+install.sh      ,/              ,false      ,false      ,false  ,false  ,true   ,false
+information.csv ,/              ,false      ,false      ,false  ,false  ,false  ,true
+files.csv       ,/              ,false      ,false      ,false  ,false  ,false  ,true

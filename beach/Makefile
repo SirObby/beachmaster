@@ -1,5 +1,5 @@
-OBJS	= main.o foo.o csv.o
-SOURCE	= main.c foo.c csv.c
+OBJS	= main.o foo.o work.o
+SOURCE	= main.c foo.c work.c
 HEADER	= foo.h
 OUT	= beach
 LFLAGS	 = -lpthread -lcurl -lm

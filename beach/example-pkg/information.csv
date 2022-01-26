@@ -1,2 +1,0 @@
-package-name ,version ,install    ,day ,month ,year ,files-csv ,compiler-script
-example-pkg  ,0.0.1   ,install.sh ,26  ,12    ,2021 ,files.csv ,false

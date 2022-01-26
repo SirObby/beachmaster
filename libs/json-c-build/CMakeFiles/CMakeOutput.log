@@ -1,0 +1,1289 @@
+The system is: Linux - 5.15.11-gentoo-x86_64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/3.22.1/CompilerIdC/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b60ca/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b60ca.dir/build.make CMakeFiles/cmTC_b60ca.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b60ca.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_b60ca.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+Target: x86_64-pc-linux-gnu
+Configured with: /var/tmp/portage/sys-devel/gcc-11.2.1_p20211127/work/gcc-11-20211127/configure --host=x86_64-pc-linux-gnu --build=x86_64-pc-linux-gnu --prefix=/usr --bindir=/usr/x86_64-pc-linux-gnu/gcc-bin/11.2.1 --includedir=/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include --datadir=/usr/share/gcc-data/x86_64-pc-linux-gnu/11.2.1 --mandir=/usr/share/gcc-data/x86_64-pc-linux-gnu/11.2.1/man --infodir=/usr/share/gcc-data/x86_64-pc-linux-gnu/11.2.1/info --with-gxx-include-dir=/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11 --with-python-dir=/share/gcc-data/x86_64-pc-linux-gnu/11.2.1/python --enable-languages=c,c++,fortran --enable-obsolete --enable-secureplt --disable-werror --with-system-zlib --enable-nls --without-included-gettext --disable-libunwind-exceptions --enable-checking=release --with-bugurl=https://bugs.gentoo.org/ --with-pkgversion='Gentoo 11.2.1_p20211127 p3' --disable-esp --enable-libstdcxx-time --enable-shared --enable-threads=posix --enable-__cxa_atexit --enable-clocale=gnu --enable-multilib --with-multilib-list=m32,m64 --disable-fixed-point --enable-targets=all --enable-libgomp --disable-libssp --disable-libada --disable-cet --disable-systemtap --disable-valgrind-annotations --disable-vtable-verify --disable-libvtv --without-zstd --enable-lto --without-isl --enable-default-pie --enable-default-ssp
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.1 20211127 (Gentoo 11.2.1_p20211127 p3) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b60ca.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b60ca.dir/'
+ /usr/libexec/gcc/x86_64-pc-linux-gnu/11.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b60ca.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cc91IT43.s
+GNU C17 (Gentoo 11.2.1_p20211127 p3) version 11.2.1 20211127 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 11.2.1 20211127, GMP version 6.2.1, MPFR version 4.1.0-p13, MPC version 1.2.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../x86_64-pc-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include
+ /usr/local/include
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include-fixed
+ /usr/include
+End of search list.
+GNU C17 (Gentoo 11.2.1_p20211127 p3) version 11.2.1 20211127 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 11.2.1 20211127, GMP version 6.2.1, MPFR version 4.1.0-p13, MPC version 1.2.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: c7d9201c8ff36e1d82793f2527e39925
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b60ca.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b60ca.dir/'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../x86_64-pc-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_b60ca.dir/CMakeCCompilerABI.c.o /tmp/cc91IT43.s
+GNU assembler version 2.37 (x86_64-pc-linux-gnu) using BFD version (Gentoo 2.37_p1 p1) 2.37
+COMPILER_PATH=/usr/libexec/gcc/x86_64-pc-linux-gnu/11.2.1/:/usr/libexec/gcc/x86_64-pc-linux-gnu/11.2.1/:/usr/libexec/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../x86_64-pc-linux-gnu/bin/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../x86_64-pc-linux-gnu/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b60ca.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b60ca.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_b60ca
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b60ca.dir/link.txt --verbose=1
+/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_b60ca.dir/CMakeCCompilerABI.c.o -o cmTC_b60ca 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-pc-linux-gnu/11.2.1/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: /var/tmp/portage/sys-devel/gcc-11.2.1_p20211127/work/gcc-11-20211127/configure --host=x86_64-pc-linux-gnu --build=x86_64-pc-linux-gnu --prefix=/usr --bindir=/usr/x86_64-pc-linux-gnu/gcc-bin/11.2.1 --includedir=/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include --datadir=/usr/share/gcc-data/x86_64-pc-linux-gnu/11.2.1 --mandir=/usr/share/gcc-data/x86_64-pc-linux-gnu/11.2.1/man --infodir=/usr/share/gcc-data/x86_64-pc-linux-gnu/11.2.1/info --with-gxx-include-dir=/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11 --with-python-dir=/share/gcc-data/x86_64-pc-linux-gnu/11.2.1/python --enable-languages=c,c++,fortran --enable-obsolete --enable-secureplt --disable-werror --with-system-zlib --enable-nls --without-included-gettext --disable-libunwind-exceptions --enable-checking=release --with-bugurl=https://bugs.gentoo.org/ --with-pkgversion='Gentoo 11.2.1_p20211127 p3' --disable-esp --enable-libstdcxx-time --enable-shared --enable-threads=posix --enable-__cxa_atexit --enable-clocale=gnu --enable-multilib --with-multilib-list=m32,m64 --disable-fixed-point --enable-targets=all --enable-libgomp --disable-libssp --disable-libada --disable-cet --disable-systemtap --disable-valgrind-annotations --disable-vtable-verify --disable-libvtv --without-zstd --enable-lto --without-isl --enable-default-pie --enable-default-ssp
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.1 20211127 (Gentoo 11.2.1_p20211127 p3) 
+COMPILER_PATH=/usr/libexec/gcc/x86_64-pc-linux-gnu/11.2.1/:/usr/libexec/gcc/x86_64-pc-linux-gnu/11.2.1/:/usr/libexec/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../x86_64-pc-linux-gnu/bin/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../x86_64-pc-linux-gnu/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_b60ca' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b60ca.'
+ /usr/libexec/gcc/x86_64-pc-linux-gnu/11.2.1/collect2 -plugin /usr/libexec/gcc/x86_64-pc-linux-gnu/11.2.1/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-pc-linux-gnu/11.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuxERUM.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b60ca /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../lib64/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../x86_64-pc-linux-gnu/lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../.. CMakeFiles/cmTC_b60ca.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_b60ca' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b60ca.'
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include]
+    add: [/usr/local/include]
+    add: [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include-fixed]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include-fixed]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include-fixed;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b60ca/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b60ca.dir/build.make CMakeFiles/cmTC_b60ca.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_b60ca.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_b60ca.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /var/tmp/portage/sys-devel/gcc-11.2.1_p20211127/work/gcc-11-20211127/configure --host=x86_64-pc-linux-gnu --build=x86_64-pc-linux-gnu --prefix=/usr --bindir=/usr/x86_64-pc-linux-gnu/gcc-bin/11.2.1 --includedir=/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include --datadir=/usr/share/gcc-data/x86_64-pc-linux-gnu/11.2.1 --mandir=/usr/share/gcc-data/x86_64-pc-linux-gnu/11.2.1/man --infodir=/usr/share/gcc-data/x86_64-pc-linux-gnu/11.2.1/info --with-gxx-include-dir=/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11 --with-python-dir=/share/gcc-data/x86_64-pc-linux-gnu/11.2.1/python --enable-languages=c c++ fortran --enable-obsolete --enable-secureplt --disable-werror --with-system-zlib --enable-nls --without-included-gettext --disable-libunwind-exceptions --enable-checking=release --with-bugurl=https://bugs.gentoo.org/ --with-pkgversion='Gentoo 11.2.1_p20211127 p3' --disable-esp --enable-libstdcxx-time --enable-shared --enable-threads=posix --enable-__cxa_atexit --enable-clocale=gnu --enable-multilib --with-multilib-list=m32 m64 --disable-fixed-point --enable-targets=all --enable-libgomp --disable-libssp --disable-libada --disable-cet --disable-systemtap --disable-valgrind-annotations --disable-vtable-verify --disable-libvtv --without-zstd --enable-lto --without-isl --enable-default-pie --enable-default-ssp]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.1 20211127 (Gentoo 11.2.1_p20211127 p3) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b60ca.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b60ca.dir/']
+  ignore line: [ /usr/libexec/gcc/x86_64-pc-linux-gnu/11.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b60ca.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cc91IT43.s]
+  ignore line: [GNU C17 (Gentoo 11.2.1_p20211127 p3) version 11.2.1 20211127 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.2.1 20211127  GMP version 6.2.1  MPFR version 4.1.0-p13  MPC version 1.2.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (Gentoo 11.2.1_p20211127 p3) version 11.2.1 20211127 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.2.1 20211127  GMP version 6.2.1  MPFR version 4.1.0-p13  MPC version 1.2.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: c7d9201c8ff36e1d82793f2527e39925]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b60ca.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b60ca.dir/']
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../x86_64-pc-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_b60ca.dir/CMakeCCompilerABI.c.o /tmp/cc91IT43.s]
+  ignore line: [GNU assembler version 2.37 (x86_64-pc-linux-gnu) using BFD version (Gentoo 2.37_p1 p1) 2.37]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-pc-linux-gnu/11.2.1/:/usr/libexec/gcc/x86_64-pc-linux-gnu/11.2.1/:/usr/libexec/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../x86_64-pc-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../x86_64-pc-linux-gnu/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b60ca.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b60ca.dir/CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_b60ca]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b60ca.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_b60ca.dir/CMakeCCompilerABI.c.o -o cmTC_b60ca ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-pc-linux-gnu/11.2.1/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /var/tmp/portage/sys-devel/gcc-11.2.1_p20211127/work/gcc-11-20211127/configure --host=x86_64-pc-linux-gnu --build=x86_64-pc-linux-gnu --prefix=/usr --bindir=/usr/x86_64-pc-linux-gnu/gcc-bin/11.2.1 --includedir=/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include --datadir=/usr/share/gcc-data/x86_64-pc-linux-gnu/11.2.1 --mandir=/usr/share/gcc-data/x86_64-pc-linux-gnu/11.2.1/man --infodir=/usr/share/gcc-data/x86_64-pc-linux-gnu/11.2.1/info --with-gxx-include-dir=/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11 --with-python-dir=/share/gcc-data/x86_64-pc-linux-gnu/11.2.1/python --enable-languages=c c++ fortran --enable-obsolete --enable-secureplt --disable-werror --with-system-zlib --enable-nls --without-included-gettext --disable-libunwind-exceptions --enable-checking=release --with-bugurl=https://bugs.gentoo.org/ --with-pkgversion='Gentoo 11.2.1_p20211127 p3' --disable-esp --enable-libstdcxx-time --enable-shared --enable-threads=posix --enable-__cxa_atexit --enable-clocale=gnu --enable-multilib --with-multilib-list=m32 m64 --disable-fixed-point --enable-targets=all --enable-libgomp --disable-libssp --disable-libada --disable-cet --disable-systemtap --disable-valgrind-annotations --disable-vtable-verify --disable-libvtv --without-zstd --enable-lto --without-isl --enable-default-pie --enable-default-ssp]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.1 20211127 (Gentoo 11.2.1_p20211127 p3) ]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-pc-linux-gnu/11.2.1/:/usr/libexec/gcc/x86_64-pc-linux-gnu/11.2.1/:/usr/libexec/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../x86_64-pc-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../x86_64-pc-linux-gnu/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_b60ca' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b60ca.']
+  link line: [ /usr/libexec/gcc/x86_64-pc-linux-gnu/11.2.1/collect2 -plugin /usr/libexec/gcc/x86_64-pc-linux-gnu/11.2.1/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-pc-linux-gnu/11.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuxERUM.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b60ca /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../lib64/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../x86_64-pc-linux-gnu/lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../.. CMakeFiles/cmTC_b60ca.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../lib64/crtn.o]
+    arg [/usr/libexec/gcc/x86_64-pc-linux-gnu/11.2.1/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/libexec/gcc/x86_64-pc-linux-gnu/11.2.1/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/libexec/gcc/x86_64-pc-linux-gnu/11.2.1/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccuxERUM.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_b60ca] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../lib64/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../lib64/Scrt1.o]
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../lib64/crti.o]
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/crtbeginS.o]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../x86_64-pc-linux-gnu/lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../x86_64-pc-linux-gnu/lib]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../..]
+    arg [CMakeFiles/cmTC_b60ca.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/crtendS.o]
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../lib64/crtn.o]
+  collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../lib64/Scrt1.o] ==> [/usr/lib64/Scrt1.o]
+  collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+  collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../../../x86_64-pc-linux-gnu/lib] ==> [/usr/x86_64-pc-linux-gnu/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/usr/lib64/Scrt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/crtendS.o;/usr/lib64/crtn.o]
+  implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1;/usr/lib64;/lib64;/usr/x86_64-pc-linux-gnu/lib;/usr/lib]
+  implicit fwks: []
+
+
+Determining if the include file sys/resource.h exists passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5296d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5296d.dir/build.make CMakeFiles/cmTC_5296d.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5296d.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_5296d.dir/CheckIncludeFile.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_5296d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5296d.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_5296d.dir/CheckIncludeFile.c.o -o cmTC_5296d 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the getrusage exist passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ca3ca/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ca3ca.dir/build.make CMakeFiles/cmTC_ca3ca.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ca3ca.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_ca3ca.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_ca3ca
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca3ca.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_ca3ca.dir/CheckSymbolExists.c.o -o cmTC_ca3ca 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/resource.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getrusage
+  return ((int*)(&getrusage))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4dc58/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4dc58.dir/build.make CMakeFiles/cmTC_4dc58.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4dc58.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_4dc58.dir/CheckIncludeFile.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_4dc58
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4dc58.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_4dc58.dir/CheckIncludeFile.c.o -o cmTC_4dc58  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ff9d9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ff9d9.dir/build.make CMakeFiles/cmTC_ff9d9.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ff9d9.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_ff9d9.dir/CheckIncludeFile.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ff9d9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ff9d9.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_ff9d9.dir/CheckIncludeFile.c.o -o cmTC_ff9d9  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdarg.h exists passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1f93b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1f93b.dir/build.make CMakeFiles/cmTC_1f93b.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1f93b.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_1f93b.dir/CheckIncludeFile.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_1f93b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1f93b.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_1f93b.dir/CheckIncludeFile.c.o -o cmTC_1f93b  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b4eb1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b4eb1.dir/build.make CMakeFiles/cmTC_b4eb1.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b4eb1.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_b4eb1.dir/CheckIncludeFile.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b4eb1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4eb1.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_b4eb1.dir/CheckIncludeFile.c.o -o cmTC_b4eb1  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_16565/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_16565.dir/build.make CMakeFiles/cmTC_16565.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_16565.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_16565.dir/CheckIncludeFile.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_16565
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16565.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_16565.dir/CheckIncludeFile.c.o -o cmTC_16565  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file syslog.h exists passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fab7d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fab7d.dir/build.make CMakeFiles/cmTC_fab7d.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fab7d.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_fab7d.dir/CheckIncludeFile.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_fab7d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fab7d.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_fab7d.dir/CheckIncludeFile.c.o -o cmTC_fab7d  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files stdlib.h;stdarg.h;string.h;float.h exist passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f465f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f465f.dir/build.make CMakeFiles/cmTC_f465f.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f465f.dir/STDC_HEADERS.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_f465f.dir/STDC_HEADERS.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CheckIncludeFiles/STDC_HEADERS.c
+Linking C executable cmTC_f465f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f465f.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_f465f.dir/STDC_HEADERS.c.o -o cmTC_f465f  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6f511/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6f511.dir/build.make CMakeFiles/cmTC_6f511.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6f511.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_6f511.dir/CheckIncludeFile.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_6f511
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f511.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_6f511.dir/CheckIncludeFile.c.o -o cmTC_6f511  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b87bc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b87bc.dir/build.make CMakeFiles/cmTC_b87bc.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b87bc.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_b87bc.dir/CheckIncludeFile.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b87bc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b87bc.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_b87bc.dir/CheckIncludeFile.c.o -o cmTC_b87bc  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file dlfcn.h exists passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ae3e8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ae3e8.dir/build.make CMakeFiles/cmTC_ae3e8.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ae3e8.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_ae3e8.dir/CheckIncludeFile.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ae3e8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae3e8.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_ae3e8.dir/CheckIncludeFile.c.o -o cmTC_ae3e8  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file endian.h exists passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9dfac/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9dfac.dir/build.make CMakeFiles/cmTC_9dfac.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9dfac.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_9dfac.dir/CheckIncludeFile.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_9dfac
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9dfac.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_9dfac.dir/CheckIncludeFile.c.o -o cmTC_9dfac  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file limits.h exists passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d076c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d076c.dir/build.make CMakeFiles/cmTC_d076c.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d076c.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_d076c.dir/CheckIncludeFile.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_d076c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d076c.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_d076c.dir/CheckIncludeFile.c.o -o cmTC_d076c  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file locale.h exists passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_86020/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_86020.dir/build.make CMakeFiles/cmTC_86020.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_86020.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_86020.dir/CheckIncludeFile.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_86020
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86020.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_86020.dir/CheckIncludeFile.c.o -o cmTC_86020  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_42082/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_42082.dir/build.make CMakeFiles/cmTC_42082.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_42082.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_42082.dir/CheckIncludeFile.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_42082
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42082.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_42082.dir/CheckIncludeFile.c.o -o cmTC_42082  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b6898/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b6898.dir/build.make CMakeFiles/cmTC_b6898.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b6898.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_b6898.dir/CheckIncludeFile.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b6898
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6898.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_b6898.dir/CheckIncludeFile.c.o -o cmTC_b6898  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1ad03/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1ad03.dir/build.make CMakeFiles/cmTC_1ad03.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1ad03.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_1ad03.dir/CheckIncludeFile.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_1ad03
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ad03.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_1ad03.dir/CheckIncludeFile.c.o -o cmTC_1ad03  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/cdefs.h exists passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_884fc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_884fc.dir/build.make CMakeFiles/cmTC_884fc.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_884fc.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_884fc.dir/CheckIncludeFile.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_884fc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_884fc.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_884fc.dir/CheckIncludeFile.c.o -o cmTC_884fc  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/param.h exists passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3582c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3582c.dir/build.make CMakeFiles/cmTC_3582c.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3582c.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_3582c.dir/CheckIncludeFile.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_3582c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3582c.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_3582c.dir/CheckIncludeFile.c.o -o cmTC_3582c  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/random.h exists passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_641b2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_641b2.dir/build.make CMakeFiles/cmTC_641b2.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_641b2.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_641b2.dir/CheckIncludeFile.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_641b2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_641b2.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_641b2.dir/CheckIncludeFile.c.o -o cmTC_641b2  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2c0b6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2c0b6.dir/build.make CMakeFiles/cmTC_2c0b6.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2c0b6.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_2c0b6.dir/CheckIncludeFile.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_2c0b6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c0b6.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_2c0b6.dir/CheckIncludeFile.c.o -o cmTC_2c0b6  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the INFINITY exist passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fafea/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fafea.dir/build.make CMakeFiles/cmTC_fafea.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fafea.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_fafea.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_fafea
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fafea.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_fafea.dir/CheckSymbolExists.c.o -o cmTC_fafea  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef INFINITY
+  return ((int*)(&INFINITY))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the isinf exist passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2c40d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2c40d.dir/build.make CMakeFiles/cmTC_2c40d.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2c40d.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_2c40d.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_2c40d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c40d.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_2c40d.dir/CheckSymbolExists.c.o -o cmTC_2c40d  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef isinf
+  return ((int*)(&isinf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the isnan exist passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_61094/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_61094.dir/build.make CMakeFiles/cmTC_61094.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_61094.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_61094.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_61094
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61094.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_61094.dir/CheckSymbolExists.c.o -o cmTC_61094  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef isnan
+  return ((int*)(&isnan))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the nan exist passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_74d70/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_74d70.dir/build.make CMakeFiles/cmTC_74d70.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_74d70.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_74d70.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_74d70
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74d70.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_74d70.dir/CheckSymbolExists.c.o -o cmTC_74d70  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef nan
+  return ((int*)(&nan))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the snprintf exist passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_91bd4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_91bd4.dir/build.make CMakeFiles/cmTC_91bd4.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_91bd4.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_91bd4.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_91bd4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91bd4.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_91bd4.dir/CheckSymbolExists.c.o -o cmTC_91bd4  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef snprintf
+  return ((int*)(&snprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the vasprintf exist passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bd0a1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bd0a1.dir/build.make CMakeFiles/cmTC_bd0a1.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bd0a1.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_bd0a1.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_bd0a1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd0a1.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_bd0a1.dir/CheckSymbolExists.c.o -o cmTC_bd0a1  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef vasprintf
+  return ((int*)(&vasprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the vsnprintf exist passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_20826/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_20826.dir/build.make CMakeFiles/cmTC_20826.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_20826.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_20826.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_20826
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20826.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_20826.dir/CheckSymbolExists.c.o -o cmTC_20826  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef vsnprintf
+  return ((int*)(&vsnprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the vprintf exist passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_488c9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_488c9.dir/build.make CMakeFiles/cmTC_488c9.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_488c9.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_488c9.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_488c9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_488c9.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_488c9.dir/CheckSymbolExists.c.o -o cmTC_488c9  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef vprintf
+  return ((int*)(&vprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file bsd/stdlib.h exists passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_62726/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_62726.dir/build.make CMakeFiles/cmTC_62726.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_62726.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_62726.dir/CheckIncludeFile.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_62726
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62726.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_62726.dir/CheckIncludeFile.c.o -o cmTC_62726  -lm 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the arc4random exist passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3af38/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3af38.dir/build.make CMakeFiles/cmTC_3af38.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3af38.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_3af38.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_3af38
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3af38.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_3af38.dir/CheckSymbolExists.c.o -o cmTC_3af38  -lm -lbsd 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <bsd/stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef arc4random
+  return ((int*)(&arc4random))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the open exist passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_194bc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_194bc.dir/build.make CMakeFiles/cmTC_194bc.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_194bc.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_194bc.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_194bc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_194bc.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_194bc.dir/CheckSymbolExists.c.o -o cmTC_194bc  -lm -lbsd 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fcntl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef open
+  return ((int*)(&open))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the realloc exist passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cb641/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cb641.dir/build.make CMakeFiles/cmTC_cb641.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cb641.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_cb641.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_cb641
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb641.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_cb641.dir/CheckSymbolExists.c.o -o cmTC_cb641  -lm -lbsd 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef realloc
+  return ((int*)(&realloc))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the setlocale exist passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e65e6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e65e6.dir/build.make CMakeFiles/cmTC_e65e6.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e65e6.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_e65e6.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_e65e6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e65e6.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_e65e6.dir/CheckSymbolExists.c.o -o cmTC_e65e6  -lm -lbsd 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <locale.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef setlocale
+  return ((int*)(&setlocale))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the uselocale exist passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2269b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2269b.dir/build.make CMakeFiles/cmTC_2269b.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2269b.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_2269b.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_2269b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2269b.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_2269b.dir/CheckSymbolExists.c.o -o cmTC_2269b  -lm -lbsd 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <locale.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef uselocale
+  return ((int*)(&uselocale))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strcasecmp exist passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5b2f5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5b2f5.dir/build.make CMakeFiles/cmTC_5b2f5.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5b2f5.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_5b2f5.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_5b2f5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b2f5.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_5b2f5.dir/CheckSymbolExists.c.o -o cmTC_5b2f5  -lm -lbsd 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <strings.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strcasecmp
+  return ((int*)(&strcasecmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strncasecmp exist passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4e938/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4e938.dir/build.make CMakeFiles/cmTC_4e938.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4e938.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_4e938.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_4e938
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e938.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_4e938.dir/CheckSymbolExists.c.o -o cmTC_4e938  -lm -lbsd 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <strings.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strncasecmp
+  return ((int*)(&strncasecmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strdup exist passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b36ac/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b36ac.dir/build.make CMakeFiles/cmTC_b36ac.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b36ac.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_b36ac.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_b36ac
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b36ac.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_b36ac.dir/CheckSymbolExists.c.o -o cmTC_b36ac  -lm -lbsd 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strdup
+  return ((int*)(&strdup))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strerror exist passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_96c72/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_96c72.dir/build.make CMakeFiles/cmTC_96c72.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_96c72.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_96c72.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_96c72
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96c72.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_96c72.dir/CheckSymbolExists.c.o -o cmTC_96c72  -lm -lbsd 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strerror
+  return ((int*)(&strerror))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the vsyslog exist passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ad18e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ad18e.dir/build.make CMakeFiles/cmTC_ad18e.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ad18e.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_ad18e.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_ad18e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad18e.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_ad18e.dir/CheckSymbolExists.c.o -o cmTC_ad18e  -lm -lbsd 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <syslog.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef vsyslog
+  return ((int*)(&vsyslog))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getrandom exist passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d4e96/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d4e96.dir/build.make CMakeFiles/cmTC_d4e96.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d4e96.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_d4e96.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_d4e96
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4e96.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_d4e96.dir/CheckSymbolExists.c.o -o cmTC_d4e96  -lm -lbsd 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/random.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getrandom
+  return ((int*)(&getrandom))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strtoll exist passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c5960/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c5960.dir/build.make CMakeFiles/cmTC_c5960.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c5960.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_c5960.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_c5960
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5960.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_c5960.dir/CheckSymbolExists.c.o -o cmTC_c5960  -lm -lbsd 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtoll
+  return ((int*)(&strtoll))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strtoull exist passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_77b27/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_77b27.dir/build.make CMakeFiles/cmTC_77b27.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_77b27.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_77b27.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_77b27
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77b27.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_77b27.dir/CheckSymbolExists.c.o -o cmTC_77b27  -lm -lbsd 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtoull
+  return ((int*)(&strtoull))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2006b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2006b.dir/build.make CMakeFiles/cmTC_2006b.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2006b.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_2006b.dir/CheckIncludeFile.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_2006b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2006b.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_2006b.dir/CheckIncludeFile.c.o -o cmTC_2006b  -lm -lbsd 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of int passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_31cdf/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_31cdf.dir/build.make CMakeFiles/cmTC_31cdf.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_31cdf.dir/SIZEOF_INT.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_31cdf.dir/SIZEOF_INT.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_INT.c
+Linking C executable cmTC_31cdf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31cdf.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_31cdf.dir/SIZEOF_INT.c.o -o cmTC_31cdf  -lm -lbsd 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of int64_t passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2b837/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2b837.dir/build.make CMakeFiles/cmTC_2b837.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2b837.dir/SIZEOF_INT64_T.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_2b837.dir/SIZEOF_INT64_T.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_INT64_T.c
+Linking C executable cmTC_2b837
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b837.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_2b837.dir/SIZEOF_INT64_T.c.o -o cmTC_2b837  -lm -lbsd 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of long passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_64280/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_64280.dir/build.make CMakeFiles/cmTC_64280.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_64280.dir/SIZEOF_LONG.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_64280.dir/SIZEOF_LONG.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_LONG.c
+Linking C executable cmTC_64280
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64280.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_64280.dir/SIZEOF_LONG.c.o -o cmTC_64280  -lm -lbsd 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of long long passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b6f3c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b6f3c.dir/build.make CMakeFiles/cmTC_b6f3c.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b6f3c.dir/SIZEOF_LONG_LONG.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_b6f3c.dir/SIZEOF_LONG_LONG.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_LONG_LONG.c
+Linking C executable cmTC_b6f3c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6f3c.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_b6f3c.dir/SIZEOF_LONG_LONG.c.o -o cmTC_b6f3c  -lm -lbsd 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of size_t passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ab619/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ab619.dir/build.make CMakeFiles/cmTC_ab619.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ab619.dir/SIZEOF_SIZE_T.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_ab619.dir/SIZEOF_SIZE_T.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_SIZE_T.c
+Linking C executable cmTC_ab619
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ab619.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_ab619.dir/SIZEOF_SIZE_T.c.o -o cmTC_ab619  -lm -lbsd 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of ssize_t passed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9f265/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9f265.dir/build.make CMakeFiles/cmTC_9f265.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9f265.dir/SIZEOF_SSIZE_T.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_9f265.dir/SIZEOF_SSIZE_T.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_SSIZE_T.c
+Linking C executable cmTC_9f265
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f265.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_9f265.dir/SIZEOF_SSIZE_T.c.o -o cmTC_9f265  -lm -lbsd 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test HAVE_ATOMIC_BUILTINS succeeded with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_58081/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_58081.dir/build.make CMakeFiles/cmTC_58081.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_58081.dir/src.c.o
+/usr/bin/cc -DHAVE_ATOMIC_BUILTINS -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_58081.dir/src.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_58081
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58081.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_58081.dir/src.c.o -o cmTC_58081  -lm -lbsd 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { int i, x = 0; i = __sync_add_and_fetch(&x,1); return x; }
+Performing C SOURCE FILE Test HAVE___THREAD succeeded with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1c1a1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1c1a1.dir/build.make CMakeFiles/cmTC_1c1a1.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1c1a1.dir/src.c.o
+/usr/bin/cc -DHAVE___THREAD -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_1c1a1.dir/src.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_1c1a1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c1a1.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_1c1a1.dir/src.c.o -o cmTC_1c1a1  -lm -lbsd 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+__thread int x = 0; int main() { return 0; }
+Performing C SOURCE FILE Test REENTRANT_WORKS succeeded with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_60a74/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_60a74.dir/build.make CMakeFiles/cmTC_60a74.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_60a74.dir/src.c.o
+/usr/bin/cc -DREENTRANT_WORKS -D_GNU_SOURCE  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes  -fPIE -o CMakeFiles/cmTC_60a74.dir/src.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_60a74
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60a74.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes  -rdynamic CMakeFiles/cmTC_60a74.dir/src.c.o -o cmTC_60a74  -lm -lbsd 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+	/* uClibc toolchains without threading barf when _REENTRANT is defined */
+	#define _REENTRANT 1
+	#include <sys/types.h>
+	int main (void)
+	{
+	  return 0;
+	}
+	
+Performing C SOURCE FILE Test BSYMBOLIC_WORKS succeeded with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_03bee/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_03bee.dir/build.make CMakeFiles/cmTC_03bee.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_03bee.dir/src.c.o
+/usr/bin/cc -DBSYMBOLIC_WORKS -D_GNU_SOURCE  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes  -fPIE -o CMakeFiles/cmTC_03bee.dir/src.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_03bee
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03bee.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes  -rdynamic CMakeFiles/cmTC_03bee.dir/src.c.o -o cmTC_03bee  -lm -lbsd -Wl,-Bsymbolic-functions 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+	int main (void)
+	{
+	  return 0;
+	}
+	
+Performing C SOURCE FILE Test VERSION_SCRIPT_WORKS succeeded with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_53600/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_53600.dir/build.make CMakeFiles/cmTC_53600.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_53600.dir/src.c.o
+/usr/bin/cc -DVERSION_SCRIPT_WORKS -D_GNU_SOURCE  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes  -fPIE -o CMakeFiles/cmTC_53600.dir/src.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_53600
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53600.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes  -rdynamic CMakeFiles/cmTC_53600.dir/src.c.o -o cmTC_53600  -lm -lbsd -Wl,--version-script,/home/sir/documents/coding/c/beachmaster/libs/json-c-build/check-version-script.sym 
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+	int main (void)
+	{
+	  return 0;
+	}
+	

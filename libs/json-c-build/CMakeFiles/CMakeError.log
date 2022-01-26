@@ -1,0 +1,177 @@
+Determining if the include file xlocale.h exists failed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fc4f3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fc4f3.dir/build.make CMakeFiles/cmTC_fc4f3.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fc4f3.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_fc4f3.dir/CheckIncludeFile.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: xlocale.h: No such file or directory
+    1 | #include <xlocale.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_fc4f3.dir/build.make:78: CMakeFiles/cmTC_fc4f3.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_fc4f3/fast] Error 2
+
+
+
+Determining if the _isnan exist failed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2caa8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2caa8.dir/build.make CMakeFiles/cmTC_2caa8.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2caa8.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_2caa8.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘_isnan’ undeclared (first use in this function)
+    8 |   return ((int*)(&_isnan))[argc];
+      |                   ^~~~~~
+/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_2caa8.dir/build.make:78: CMakeFiles/cmTC_2caa8.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_2caa8/fast] Error 2
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _isnan
+  return ((int*)(&_isnan))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _finite exist failed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_625ff/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_625ff.dir/build.make CMakeFiles/cmTC_625ff.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_625ff.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_625ff.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘_finite’ undeclared (first use in this function)
+    8 |   return ((int*)(&_finite))[argc];
+      |                   ^~~~~~~
+/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_625ff.dir/build.make:78: CMakeFiles/cmTC_625ff.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_625ff/fast] Error 2
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _finite
+  return ((int*)(&_finite))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _doprnt exist failed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_89610/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_89610.dir/build.make CMakeFiles/cmTC_89610.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_89610.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_89610.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘_doprnt’ undeclared (first use in this function)
+    8 |   return ((int*)(&_doprnt))[argc];
+      |                   ^~~~~~~
+/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_89610.dir/build.make:78: CMakeFiles/cmTC_89610.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_89610/fast] Error 2
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _doprnt
+  return ((int*)(&_doprnt))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the arc4random exist failed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_45313/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_45313.dir/build.make CMakeFiles/cmTC_45313.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_45313.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_45313.dir/CheckSymbolExists.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘arc4random’ undeclared (first use in this function); did you mean ‘srandom’?
+    8 |   return ((int*)(&arc4random))[argc];
+      |                   ^~~~~~~~~~
+      |                   srandom
+/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_45313.dir/build.make:78: CMakeFiles/cmTC_45313.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_45313/fast] Error 2
+
+
+File /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef arc4random
+  return ((int*)(&arc4random))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test HAS_GNU_WARNING_LONG failed with the following output:
+Change Dir: /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e65e8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e65e8.dir/build.make CMakeFiles/cmTC_e65e8.dir/build
+gmake[1]: Entering directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e65e8.dir/src.c.o
+/usr/bin/cc -DHAS_GNU_WARNING_LONG -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_e65e8.dir/src.c.o -c /home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/src.c
+/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/src.c:3:9: warning: missing terminating " character
+    3 | __asm__(".section .gnu.json_object_get
+      |         ^
+/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/src.c:3:9: error: missing terminating " character
+    3 | __asm__(".section .gnu.json_object_get
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/src.c:4:9: error: expected string literal before ‘.’ token
+    4 |         .ascii "Please link against libjson-c instead of libjson"
+      |         ^
+/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/src.c:5:14: warning: missing terminating " character
+    5 |         .text");
+      |              ^
+/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp/src.c:5:14: error: missing terminating " character
+    5 |         .text");
+      |              ^~~
+gmake[1]: *** [CMakeFiles/cmTC_e65e8.dir/build.make:78: CMakeFiles/cmTC_e65e8.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/sir/documents/coding/c/beachmaster/libs/json-c-build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_e65e8/fast] Error 2
+
+
+Source file was:
+
+extern void json_object_get();
+__asm__(".section .gnu.json_object_get
+	.ascii "Please link against libjson-c instead of libjson"
+	.text");
+int main(int c, char *v) { return 0;}
+

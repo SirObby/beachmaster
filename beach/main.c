@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include <argp.h>
-#include "work.h"
 
 const char *argp_program_version =
     "argp-ex3 1.0";
@@ -18,6 +17,9 @@ static char args_doc[] = "ARG1 ARG2";
 static struct argp_option options[] = {
     {"verbose", 'v', 0, 0, "Produce verbose output"},
     {"quiet", 'q', 0, 0, "Don't produce any output"},
+    {"ask", 'a', 0, 0, "Ask to install packages"},
+    {"search", 'c', 0, 0, "Search for packages"},
+    {"build", 'b', 0, 0, "Build the package from scratch."},
     {"silent", 's', 0, OPTION_ALIAS},
     {0}};
 
@@ -25,7 +27,7 @@ static struct argp_option options[] = {
 struct arguments
 {
     char *args[99]; /* arg1 & arg2 */
-    int silent, verbose;
+    int silent, verbose, ask, search, build;
 };
 
 /* Parse a single option. */
@@ -44,6 +46,15 @@ parse_opt(int key, char *arg, struct argp_state *state)
         break;
     case 'v':
         arguments->verbose = 1;
+        break;
+    case 'a':
+        arguments->ask = 1;
+        break;
+    case 'c':
+        arguments->search = 1;
+        break;
+    case 'b':
+        arguments->build = 1;
         break;
 
     case ARGP_KEY_ARG:
@@ -76,6 +87,9 @@ int main(int argc, char **argv)
     /* Default values. */
     arguments.silent = 0;
     arguments.verbose = 0;
+    arguments.ask = 0;
+    arguments.search = 0;
+    arguments.build = 0;
 
     /* Parse our arguments; every option seen by parse_opt will
        be reflected in arguments. */
@@ -83,7 +97,7 @@ int main(int argc, char **argv)
                0,
                0, &arguments);
 
-    work(arguments.args, arguments.silent, arguments.verbose);
+    
 
     exit(0);
 }

@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.spwn": "spwn",
+        "NEOMakefile": "makefile",
+        "depmap.h": "c"
+    }
+}

@@ -30,10 +30,10 @@ typedef struct binary_format
  * @param bf 
  * @param byte_count 
  */
-void bf_set_sector(binary_format bf, binary_format_sector_name bf_type, int byte_count);
-char *bf_get_sector_char(binary_format bf, binary_format_sector_name bf_type);
-int bf_get_sector_int(binary_format bf, binary_format_sector_name bf_type);
+void bf_set_sector(struct binary_format bf, enum binary_format_sector_name bf_type, int byte_count);
+char *bf_get_sector_char(struct binary_format bf, enum binary_format_sector_name bf_type);
+int bf_get_sector_int(struct binary_format bf, enum binary_format_sector_name bf_type);
 
-struct binary_format parse_from_file(binary_format bf);
+struct binary_format parse_from_file(struct binary_format bf);
 
 #endif

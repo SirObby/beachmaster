@@ -2,6 +2,8 @@
     "files.associations": {
         "*.spwn": "spwn",
         "NEOMakefile": "makefile",
-        "depmap.h": "c"
+        "*.hbuild": "c",
+        "depmap.h": "c",
+        "binary_format.h": "c"
     }
 }

@@ -2,6 +2,7 @@ test
 *.o
 beach/beach
 updater/updater
-libs/curl-7.80.0
+libs/curl-7.80.0.tar.xz
 Qt/Installer/build*
 libs/json-c-build/
+libs/json-c

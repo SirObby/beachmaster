@@ -4,3 +4,4 @@ beach/beach
 updater/updater
 libs/curl-7.80.0
 Qt/Installer/build*
+libs/json-c-build/

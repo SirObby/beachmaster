@@ -1,5 +1,10 @@
 #include <stdlib.h>
 #include <argp.h>
+#include <stdio.h>
+#include <string.h>
+#include <dirent.h>
+
+#include "sys/install.h"
 
 const char *argp_program_version =
     "argp-ex3 1.0";
@@ -11,7 +16,7 @@ static char doc[] =
     "Argp example #3 -- a program with options and arguments using argp";
 
 /* A description of the arguments we accept. */
-static char args_doc[] = "ARG1 ARG2";
+static char args_doc[] = "COMMAND <PACKAGE>";
 
 /* The options we understand. */
 static struct argp_option options[] = {
@@ -27,7 +32,7 @@ static struct argp_option options[] = {
 struct arguments
 {
     char *args[99]; /* arg1 & arg2 */
-    int silent, verbose, ask, search, build;
+    int silent, verbose, ask, search, build, argcount;
 };
 
 /* Parse a single option. */
@@ -63,6 +68,7 @@ parse_opt(int key, char *arg, struct argp_state *state)
             argp_usage(state);
 
         arguments->args[state->arg_num] = arg;
+        arguments->argcount++;
 
         break;
 
@@ -90,6 +96,7 @@ int main(int argc, char **argv)
     arguments.ask = 0;
     arguments.search = 0;
     arguments.build = 0;
+    arguments.argcount = 0;
 
     /* Parse our arguments; every option seen by parse_opt will
        be reflected in arguments. */
@@ -97,7 +104,11 @@ int main(int argc, char **argv)
                0,
                0, &arguments);
 
-    
+    // If the first argument is "install" then we should install the package
+    if (strcmp(arguments.args[0], "install") == 0)
+    {  
+        install(arguments.argcount, arguments.args);
+    }
 
     exit(0);
 }

@@ -1,5 +1,5 @@
-OBJS	= main.o foo.o sys/depmap.o sys/binary_format.o
-SOURCE	= main.c foo.c sys/depmap.c sys/binary_format.c
+OBJS	= main.o foo.o sys/depmap.o sys/install.o
+SOURCE	= main.c foo.c sys/depmap.c sys/install.c
 HEADER	= foo.h sys/depmap.h
 OUT	= beach
 JSON_C_DIR=../libs/json-c-build

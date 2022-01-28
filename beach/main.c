@@ -20,7 +20,7 @@ static char args_doc[] = "COMMAND <PACKAGE>";
 
 /* The options we understand. */
 static struct argp_option options[] = {
-    {"verbose", 'v', 0, 0, "Produce verbose output"},
+    {"version", 'v', "VERSION", 0, "Set a specific version."},
     {"quiet", 'q', 0, 0, "Don't produce any output"},
     {"ask", 'a', 0, 0, "Ask to install packages"},
     {"search", 'c', 0, 0, "Search for packages"},
@@ -32,7 +32,8 @@ static struct argp_option options[] = {
 struct arguments
 {
     char *args[99]; /* arg1 & arg2 */
-    int silent, verbose, ask, search, build, argcount;
+    char *version;
+    int silent, ask, search, build, argcount;
 };
 
 /* Parse a single option. */
@@ -50,7 +51,7 @@ parse_opt(int key, char *arg, struct argp_state *state)
         arguments->silent = 1;
         break;
     case 'v':
-        arguments->verbose = 1;
+        strcpy(arguments->version, arg);
         break;
     case 'a':
         arguments->ask = 1;
@@ -92,11 +93,12 @@ int main(int argc, char **argv)
 
     /* Default values. */
     arguments.silent = 0;
-    arguments.verbose = 0;
+    strcpy(arguments.version, "");
     arguments.ask = 0;
     arguments.search = 0;
     arguments.build = 0;
     arguments.argcount = 0;
+
 
     /* Parse our arguments; every option seen by parse_opt will
        be reflected in arguments. */
@@ -107,7 +109,7 @@ int main(int argc, char **argv)
     // If the first argument is "install" then we should install the package
     if (strcmp(arguments.args[0], "install") == 0)
     {  
-        install(arguments.argcount, arguments.args);
+        install(arguments.argcount, arguments.args, arguments.silent, arguments.version);
     }
 
     exit(0);

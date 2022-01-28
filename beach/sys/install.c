@@ -6,35 +6,64 @@
 #include <fcntl.h>
 #include "../colors.h"
 
-void install(int argc, char *args[99])
+// Import a thread library
+#include <pthread.h>
+
+void install(int argc, char *args[99], int silent, char *version)
 {
-    printf("\n%s> %sbeach package manager\n\n", CYN, GRN);
+    printf("\n%s> %sbeach package manager\n\n%s", CYN, GRN, reset);
 
-    // Use fcntl to write and read lock /var/lock/beach.lock
-    // This will prevent multiple instances of the program from running
-    // at the same time.
-    // Even when running multiple instances as root, this will prevent them from running at the same time.
-
-    // Create a file /var/lock/beach.lock
-    int lock = open("/var/lock/beach.lock", O_RDWR | O_CREAT, 0666);
-
-    // Use fcntl to lock the file
-    flock(lock, LOCK_EX);
-
-    // Check if the file exists
-    if (access("/var/lock/beach.lock", F_OK) != -1)
+    // Print all files in /var/beach/pkg to the console
+    DIR *dir;
+    struct dirent *ent;
+    
+    // Open the directory
+    dir = opendir("/var/beach/pkg/");
+    if (dir == NULL)
     {
-        printf("%s> %sbeach is already running.\n", RED, GRN);
-        printf("%s> %sPlease close the other instance of beach and try again.\n", RED, GRN);
-        exit(1);
+        printf("%s> %sError: Could not open directory.\n%s", RED, GRN, reset);
+        return;
     }
 
-    // Release the lock on the file /var/lock/beach.lock.
-    flock(lock, LOCK_UN);
+    int found = 0;
 
-    // Close the file /var/lock/beach.lock
-    close(lock);
+    // Read all files in the directory
+    while ((ent = readdir(dir)) != NULL)
+    {
+        // If the file is a directory, skip it
+        if (ent->d_type == DT_DIR)
+            continue;
 
-    // Print a message that the program has done its job.
-    printf("%s> %sbeach is now done.\n", GRN, CYN);
+        // Ignore files that do not end in .build-pkg
+        if (strcmp(ent->d_name + strlen(ent->d_name) - strlen(".build-pkg"), ".build-pkg") != 0)
+            continue;
+
+        // Print the file name
+        //printf("%s> %s%s\n", GRN, ent->d_name, reset);
+
+        // Check if the filename includes the string in char[1] and print it
+        if (strstr(ent->d_name, args[1]) != NULL)
+        {
+            // If version is not empty, check if the version is the same.
+            if (strcmp(version, "") != 0)
+            {
+                // If the version is not the same, skip the file
+                if (strstr(ent->d_name, version) == NULL)
+                    continue;
+            }
+
+            printf("%s> %s%s\n", GRN, ent->d_name, reset);
+
+            found = 1;
+        }
+    }
+
+    if(found == 0)
+    {
+        printf("%s> %sNo packages found.\n%s", RED, GRN, reset);
+    }
+
+    // Close the directory
+    closedir(dir);
+
 }

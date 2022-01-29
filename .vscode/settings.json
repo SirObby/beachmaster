@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "*.spwn": "spwn",
-        "NEOMakefile": "makefile",
-        "*.hbuild": "c",
-        "depmap.h": "c",
-        "binary_format.h": "c"
-    }
-}

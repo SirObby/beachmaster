@@ -66,106 +66,87 @@ void install(int argc, char *args[99], int silent, char *version)
         return;
     }
 
-    // Search through the folder /var/beach/pkg if it includes a file ending in .build-pkg
-    // That contains the package name in args[1]
-    // And if version is not empty, then check if the version is the same as the version in the file which the filename is formatted as "<package>_<version>.build-pkg"
-    // And the version being formatted as "x.x.x"
-    // If the version is not the same, then print an error message and return
-    // If no version is given, then use the latest version of the file, because there can be multiple versions of the file
-    // Once a file is found, then print a message saying the package name, versino and the file path
-    // Don't install a package if it is listed in /var/beach/installed
-    // If the package is not installed, then install it by opening the file and copying the name to the file /var/beach/installed
-    // If the file is not found, then print an error message
-
-    DIR *dir;
-    struct dirent *ent;
-    char *filename;
-    char *package;
-    char *version_file;
-    char *version_file_version;
-    char *version_file_package;
-
-    // Open the directory /var/beach/pkg
-    dir = opendir("/var/beach/pkg");
-
-    // If the directory does not exist, then print an error message and return
-    if (dir == NULL)
+    // If the user is not root then print an error message and return
+    if (getuid() != 0)
     {
-        printf("%s[!]%s The directory /var/beach/pkg does not exist.\n", RED, reset);
+        printf("%s[!]%s You must be root to install packages.\n", RED, reset);
         return;
     }
 
-    // Loop through the directory
-    while ((ent = readdir(dir)) != NULL)
+
+    // Check if the file in /var/beach/pkg with the name with the format of args[1]_version.build-pkg exists.
+    // If it does not, then print an error message and return.
+    // If it does, then print it's name and return.
+    
+    // Make a buffer to store the file name
+    char file[256];
+    // Add the string /var/beach/pkg to the buffer
+    strcat(file, "/var/beach/pkg/");
+    // Add the string args[1] to the buffer
+    strcat(file, args[1]);
+    // Add the string -version to the buffer
+    strcat(file, "_");
+    // Add the string version to the buffer
+    strcat(file, version);
+    // Add the string .build-pkg to the buffer
+    strcat(file, ".build-pkg");
+
+    if (access(file, F_OK) != -1)
     {
-        // If the file is a .build-pkg file, then
-        if (strstr(ent->d_name, ".build-pkg") != NULL)
+        printf("%s[+]%s The package /var/beach/pkg/%s_%s.build-pkg was found.\n", GRN, reset, args[1], version);
+    
+        int confirm = 0; 
+
+        // If the silent flag is not set, then ask the user if they want to install the package
+        // If not then return
+        if (silent == 0)
         {
-            // Declare a buffer to store the file name
-            filename = ent->d_name;
-
-            // Declare a buffer to store the package name
-            package = strtok(filename, "_");
-
-            // Declare a buffer to store the version
-            version_file = strtok(NULL, "_");
-
-            // Declare a buffer to store the version
-            version_file_version = strtok(version_file, ".");
-
-            // Declare a buffer to store the package name
-            version_file_package = strtok(NULL, ".");
-
-            // Parse the version file's version to the correct format "x.x.x"
-            version_file_version = strcat(version_file_version, ".");
-            version_file_version = strcat(version_file_version, strtok(NULL, "."));
-            version_file_version = strcat(version_file_version, ".");
-            version_file_version = strcat(version_file_version, strtok(NULL, "."));
-
-            // If the package name is the same as the package name in args[1], then
-            if (strcmp(package, args[1]) == 0)
+            printf("%s[?]%s Do you want to install the package? (y/n) ", CYN, reset);
+            char answer[2];
+            scanf("%s", answer);
+            if (strcmp(answer, "y") != 0)
             {
-                // If the version is not empty, then
-                if (strcmp(version, "") != 0)
-                {
-                    // Print the version input
-                    printf("%s[*]%s Version: %s\n", GRN, reset, version);
-                    // Print the file version
-                    printf("%s[*]%s File version: %s\n", GRN, reset, version_file_version);
-
-                    // If the version is the same as the version in the file, then
-                    if (strcmp(version, version_file_version) == 0)
-                    {
-                        // Print a message saying the package name, version and the file path
-                        printf("%s[*]%s Installing %s version %s from %s\n", GRN, reset, package, version, filename);
-
-                        // Create a string to store the file path
-                        char file_path[256];
-                        // Add the path /var/beach/pkg to the file_path
-                        strcpy(file_path, "/var/beach/pkg/");
-                        // Add the file name to the file_path
-                        strcat(file_path, filename);
-
-                        // Open the file
-                        FILE *fp = fopen(file_path, "r");
-
-                        // If the file does not exist, then print an error message and return
-                        if (fp == NULL)
-                        {
-                            printf("%s[!]%s The file %s does not exist.\n", RED, reset, filename);
-                            return;
-                        }
-                        // Check if the package is already installed which is done by checking if the package in args[1] in the file /var/beach/installed.
-                        // by calling the check_installed function
-                        // If it is, then print an error message and return.
-                        if (check_installed(args[1]) == 1)
-                        {
-                            printf("%s[!]%s The package %s is already installed.\n", RED, reset, args[1]);
-                            return;
-                        }
-                    }
-                }
+                printf("%s[!]%s The package was not installed.\n", RED, reset);
+                return;
             }
+            confirm = 1;
+            
+        } else {
+            confirm = 1;
+        }
+
+        // if confirm is 1, then print a message saying that the package is being installed
+        if (confirm == 1)
+        {
+            printf("%s[+]%s Installing the package...\n", GRN, reset);
+
+            // Make a buffer to store the contents of the file in /var/beach/pkg/args[1]_version.build-pkg
+            char buffer[256];
+            // Open the file in /var/beach/pkg/args[1]_version.build-pkg
+            FILE *fp = fopen(file, "r");
+            // Read the file into the buffer
+            fgets(buffer, sizeof(buffer), fp);
+            
+            // Loop through each line of the buffer and execute the command
+            char *line = strtok(buffer, "\n");
+
+            while (line != NULL)
+            {
+                // Execute the command
+                system(line);
+                // Read the next line
+                line = strtok(NULL, "\n");
+            }
+
+            // Close the file
+            fclose(fp);
+
         }
     }
+    else
+    {
+        printf("%s[!]%s The package /var/beach/pkg/%s_%s.build-pkg was not found.\n", RED, reset, args[1], version);
+        return;
+    }
+
 }

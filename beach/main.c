@@ -74,7 +74,7 @@ parse_opt(int key, char *arg, struct argp_state *state)
         break;
 
     case ARGP_KEY_END:
-        if (state->arg_num < 2)
+        if (state->arg_num < 1)
             /* Not enough arguments. */
             argp_usage(state);
         break;
@@ -116,9 +116,13 @@ int main(int argc, char **argv)
     {
         // Make a folder in the directory /var/beach/pkg
         mkdir("/var/beach/", 0777);
+        mkdir("/etc/beach/", 0777);
         // Make a file in the directory /var/beach/ called installed
-        FILE *fp = fopen("/var/beach/installed", "w");
+        FILE *fp = fopen("/var/beach/installed", "w+");
         fclose(fp);
+
+        FILE *usersf = fopen("/etc/beach/users", "w+");
+        fclose(usersf);
     }
 
     exit(0);

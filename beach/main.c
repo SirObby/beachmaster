@@ -51,7 +51,7 @@ parse_opt(int key, char *arg, struct argp_state *state)
         arguments->silent = 1;
         break;
     case 'v':
-        strcpy(arguments->version, arg);
+        arguments->version = arg;
         break;
     case 'a':
         arguments->ask = 1;

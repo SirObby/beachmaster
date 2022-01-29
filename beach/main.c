@@ -93,7 +93,6 @@ int main(int argc, char **argv)
 
     /* Default values. */
     arguments.silent = 0;
-    strcpy(arguments.version, "");
     arguments.ask = 0;
     arguments.search = 0;
     arguments.build = 0;
@@ -110,6 +109,16 @@ int main(int argc, char **argv)
     if (strcmp(arguments.args[0], "install") == 0)
     {  
         install(arguments.argcount, arguments.args, arguments.silent, arguments.version);
+    }
+
+    // If the first argument is "init" then we should create the folder structure necessary for beach
+    if (strcmp(arguments.args[0], "init") == 0)
+    {
+        // Make a folder in the directory /var/beach/pkg
+        mkdir("/var/beach/", 0777);
+        // Make a file in the directory /var/beach/ called installed
+        FILE *fp = fopen("/var/beach/installed", "w");
+        fclose(fp);
     }
 
     exit(0);

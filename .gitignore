@@ -7,3 +7,4 @@ Qt/Installer/build*
 libs/json-c-build/
 libs/json-c
 install
+.vscode

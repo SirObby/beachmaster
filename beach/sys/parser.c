@@ -36,10 +36,9 @@ int parse_file(char *file, int silent) {
     char *firstline = malloc(sizeof(char) * 256);
     strcpy(firstline, buffer);
     char *firstline_split = strtok(firstline, "\n");
-    char *firstline_split_split = strtok(firstline_split, " ");
-    printf("%s[*]%s First line of the file: %s\n", GRN, reset, firstline_split_split);
+    printf("%s[*]%s First line of the file: %s\n", GRN, reset, firstline_split);
     // Check if the first line of the file starts with git or curl
-    if (strcmp(firstline_split_split, "git") == 0) {
+    if (strcmp(firstline_split, "git") == 0) {
         // If it starts with git, then we should use git to clone the repo (that is in the second line of the file) into the workdir
         char *secondline = malloc(sizeof(char) * 256);
         strcpy(secondline, buffer);
@@ -52,7 +51,7 @@ int parse_file(char *file, int silent) {
         printf("%s[*]%s Cloning the repo into the workdir...\n", GRN, reset);
         system(git_clone);
         printf("%s[*]%s Cloning the repo into the workdir... Done!\n", GRN, reset);
-    } else if (strcmp(firstline_split_split, "curl") == 0) {
+    } else if (strcmp(firstline_split, "curl") == 0) {
         // If it starts with curl, then we should use curl to download the file (that is in the second line of the file) into the workdir
         char *secondline = malloc(sizeof(char) * 256);
         strcpy(secondline, buffer);

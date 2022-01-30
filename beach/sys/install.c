@@ -120,26 +120,14 @@ void install(int argc, char *args[99], int silent, char *version)
         {
             printf("%s[+]%s Installing the package...\n", GRN, reset);
 
-            // Make a buffer to store the contents of the file in /var/beach/pkg/args[1]_version.build-pkg
-            char buffer[256];
-            // Open the file in /var/beach/pkg/args[1]_version.build-pkg
-            FILE *fp = fopen(file, "r");
-            // Read the file into the buffer
-            fgets(buffer, sizeof(buffer), fp);
-            
-            // Loop through each line of the buffer and execute the command
-            char *line = strtok(buffer, "\n");
+            // Execute the parse_file function with the file name as the argument
+            parse_file(file);
 
-            while (line != NULL)
-            {
-                // Execute the command
-                system(line);
-                // Read the next line
-                line = strtok(NULL, "\n");
-            }
+            // Print a message saying that the package was installed
+            printf("%s[+]%s The package was installed.\n", GRN, reset);
 
-            // Close the file
-            fclose(fp);
+            // Return
+            return;
 
         }
     }

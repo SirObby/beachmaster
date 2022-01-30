@@ -10,9 +10,11 @@ clean:
 beach:
 	${MAKE} --no-print-directory -C ./beach/ clean
 	${MAKE} --no-print-directory -C ./beach
+	${MAKE} --no-print-directory -C ./beach/ install
 .PHONY	: beach
 
 updater:
 	${MAKE} --no-print-directory -C ./updater/ clean
 	${MAKE} --no-print-directory -C ./updater
+	${MAKE} --no-print-directory -C ./updater/ install
 .PHONY	: updater

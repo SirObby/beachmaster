@@ -116,6 +116,7 @@ int main(int argc, char **argv)
     {
         // Make a folder in the directory /var/beach/pkg
         mkdir("/var/beach/", 0777);
+        mkdir("/var/tmp/beach", 0777);
         mkdir("/etc/beach/", 0777);
         // Make a file in the directory /var/beach/ called installed
         FILE *fp = fopen("/var/beach/installed", "w+");

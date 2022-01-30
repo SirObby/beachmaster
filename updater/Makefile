@@ -15,3 +15,7 @@ updater: $(OBJS)
 
 clean:
 	rm -f $(OBJS) $(OUT)
+
+# Create a install rule
+install:
+	cp $(OUT) /usr/local/bin/

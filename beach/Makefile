@@ -1,5 +1,5 @@
-OBJS	= main.o foo.o sys/depmap.o sys/install.o
-SOURCE	= main.c foo.c sys/depmap.c sys/install.c
+OBJS	= main.o foo.o sys/depmap.o sys/install.o sys/parser.o
+SOURCE	= main.c foo.c sys/depmap.c sys/install.c sys/parser.c
 HEADER	= foo.h sys/depmap.h
 OUT	= beach
 JSON_C_DIR=../libs/json-c-build
@@ -16,3 +16,7 @@ beach: $(OBJS)
 
 clean:
 	rm -f $(OBJS) $(OUT)
+
+# Create a install rule
+install:
+	cp $(OUT) /usr/local/bin/

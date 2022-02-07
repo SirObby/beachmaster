@@ -1,10 +1,9 @@
-#include <stdlib.h>
 #include <argp.h>
+#include <dialog.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
-#include <dirent.h>
-
-#include "sys/install.h"
+#include "foo.h"
 
 const char *argp_program_version =
     "argp-ex3 1.0";
@@ -16,115 +15,87 @@ static char doc[] =
     "Argp example #3 -- a program with options and arguments using argp";
 
 /* A description of the arguments we accept. */
-static char args_doc[] = "COMMAND <PACKAGE>";
+static char args_doc[] = "";
 
 /* The options we understand. */
 static struct argp_option options[] = {
-    {"version", 'v', "VERSION", 0, "Set a specific version."},
+    {"verbose", 'v', 0, 0, "Produce verbose output"},
     {"quiet", 'q', 0, 0, "Don't produce any output"},
-    {"ask", 'a', 0, 0, "Ask to install packages"},
-    {"search", 'c', 0, 0, "Search for packages"},
-    {"build", 'b', 0, 0, "Build the package from scratch."},
     {"silent", 's', 0, OPTION_ALIAS},
+    {"output", 'o', "FILE", 0,
+     "Output to FILE instead of standard output"},
     {0}};
 
 /* Used by main to communicate with parse_opt. */
 struct arguments
 {
-    char *args[99]; /* arg1 & arg2 */
-    char *version;
-    int silent, ask, search, build, argcount;
+  char *args[2]; /* arg1 & arg2 */
+  int silent, verbose;
+  char *output_file;
 };
 
 /* Parse a single option. */
 static error_t
 parse_opt(int key, char *arg, struct argp_state *state)
 {
-    /* Get the input argument from argp_parse, which we
-       know is a pointer to our arguments structure. */
-    struct arguments *arguments = state->input;
+  /* Get the input argument from argp_parse, which we
+     know is a pointer to our arguments structure. */
+  struct arguments *arguments = state->input;
 
-    switch (key)
-    {
-    case 'q':
-    case 's':
-        arguments->silent = 1;
-        break;
-    case 'v':
-        arguments->version = arg;
-        break;
-    case 'a':
-        arguments->ask = 1;
-        break;
-    case 'c':
-        arguments->search = 1;
-        break;
-    case 'b':
-        arguments->build = 1;
-        break;
+  switch (key)
+  {
+  case 'q':
+  case 's':
+    arguments->silent = 1;
+    break;
+  case 'v':
+    arguments->verbose = 1;
+    break;
+  case 'o':
+    arguments->output_file = arg;
+    break;
 
-    case ARGP_KEY_ARG:
-        if (state->arg_num >= 2)
-            /* Too many arguments. */
-            argp_usage(state);
+  case ARGP_KEY_ARG:
+    if (state->arg_num >= 2)
+      /* Too many arguments. */
+      argp_usage(state);
 
-        arguments->args[state->arg_num] = arg;
-        arguments->argcount++;
+    arguments->args[state->arg_num] = arg;
 
-        break;
+    break;
 
-    case ARGP_KEY_END:
-        if (state->arg_num < 1)
-            /* Not enough arguments. */
-            argp_usage(state);
-        break;
+  case ARGP_KEY_END:
+    /*if (state->arg_num < 1)
+      argp_usage(state);*/
+    break;
 
-    default:
-        return ARGP_ERR_UNKNOWN;
-    }
-    return 0;
+  default:
+    return ARGP_ERR_UNKNOWN;
+  }
+  return 0;
 }
 /* Our argp parser. */
 static struct argp argp = {options, parse_opt, args_doc, doc};
 
+WINDOW *create_newwin(int height, int width, int starty, int startx);
+void destroy_win(WINDOW *local_win);
+
 int main(int argc, char **argv)
 {
-    struct arguments arguments;
+  struct arguments arguments;
 
-    /* Default values. */
-    arguments.silent = 0;
-    arguments.ask = 0;
-    arguments.search = 0;
-    arguments.build = 0;
-    arguments.argcount = 0;
+  /* Default values. */
+  arguments.silent = 0;
+  arguments.verbose = 0;
+  arguments.output_file = "-";
 
+  /* Parse our arguments; every option seen by parse_opt will
+     be reflected in arguments. */
+  argp_parse(&argp, argc, argv,
+             0,
+             0, &arguments);
 
-    /* Parse our arguments; every option seen by parse_opt will
-       be reflected in arguments. */
-    argp_parse(&argp, argc, argv,
-               0,
-               0, &arguments);
+  d();
 
-    // If the first argument is "install" then we should install the package
-    if (strcmp(arguments.args[0], "install") == 0)
-    {  
-        install(arguments.argcount, arguments.args, arguments.silent, arguments.version);
-    }
-
-    // If the first argument is "init" then we should create the folder structure necessary for beach
-    if (strcmp(arguments.args[0], "init") == 0)
-    {
-        // Make a folder in the directory /var/beach/pkg
-        mkdir("/var/beach/", 0777);
-        mkdir("/var/tmp/beach", 0777);
-        mkdir("/etc/beach/", 0777);
-        // Make a file in the directory /var/beach/ called installed
-        FILE *fp = fopen("/var/beach/installed", "w+");
-        fclose(fp);
-
-        FILE *usersf = fopen("/etc/beach/users", "w+");
-        fclose(usersf);
-    }
-
-    exit(0);
+  exit(0);
 }

@@ -2,5 +2,5 @@
 #define _H_FOO
 
 void bar();
-
+void d();
 #endif

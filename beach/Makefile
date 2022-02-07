@@ -1,9 +1,8 @@
-OBJS	= main.o foo.o sys/depmap.o sys/install.o sys/parser.o
-SOURCE	= main.c foo.c sys/depmap.c sys/install.c sys/parser.c
-HEADER	= foo.h sys/depmap.h
+OBJS	= main.o foo.o 
+SOURCE	= main.c foo.c 
 OUT	= beach
 JSON_C_DIR=../libs/json-c-build
-LFLAGS	 = -lpthread -lcurl -lm -L../libs/json-c-build/ -ljson-c
+LFLAGS	 = -lpthread -lcurl -lm -L../libs/json-c-build/ -ljson-c -ldialog
 CFLAGS = -O2 -I../libs/json-c/ -I../libs/json-c-build/
 
 all: beach

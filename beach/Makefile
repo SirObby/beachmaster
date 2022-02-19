@@ -1,5 +1,5 @@
-OBJS	= main.o foo.o 
-SOURCE	= main.c foo.c 
+OBJS	= main.o foo.o work.o
+SOURCE	= main.c foo.c work.c
 OUT	= beach
 JSON_C_DIR=../libs/json-c-build
 LFLAGS	 = -lpthread -lcurl -lm -L../libs/json-c-build/ -ljson-c -ldialog

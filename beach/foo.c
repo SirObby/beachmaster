@@ -39,18 +39,20 @@ void d() {
         getcwd(msg, sizeof(msg));
         strcat(msg, "\n");
 
-        // Get all the files in the current directory and print them out IF they end in .beach-pkg
+        // Get all the files in the current directory and print them out IF they end in .pkg
         
         DIR *dir;
         struct dirent *ent;
         if ((dir = opendir (".")) != NULL) {
             /* print all the files and directories within directory */
             while ((ent = readdir (dir)) != NULL) {
-                if(strstr(ent->d_name, ".beach-pkg") != NULL) {
+                if(strstr(ent->d_name, ".pkg") != NULL) {
                     printf("%s\n", ent->d_name);
-                    // Read each line in the file /etc/beach/installed and check if filename is in the list
-                    // If it is not in the list, print "POGGERS"
-                    // If it is in the list, print "NOT POGGERS"
+                    
+                    int is_installed = 0;
+
+                    // Get the contents of the file /etc/beach/installed and loop through it incase the filename is already in there
+                    // And loop through the contents line by line and and if the filename is in a line then print "END"
                     FILE *fp;
                     char *line = NULL;
                     size_t len = 0;
@@ -60,15 +62,15 @@ void d() {
                         exit(EXIT_FAILURE);
                     while ((read = getline(&line, &len, fp)) != -1) {
                         if(strstr(line, ent->d_name) != NULL) {
-                            printf("%s\n", "POGGERS");
-                        } else {
-                            printf("%s\n", "NOT POGGERS");
+                            is_installed = 1;
                         }
                     }
 
+                    if(is_installed == 0) {
                     // Add the filename to the msg string in a new line
                     strcat(msg, ent->d_name);
                     strcat(msg, "\n");
+                    }
                 }
             }
             
@@ -84,7 +86,7 @@ void d() {
         end_dialog();
     }
     else if(strcmp(result, "Other") == 0) {
-
+        
     }
     else if(strcmp(result, "Floppy") == 0) {
 
@@ -104,4 +106,6 @@ void d() {
     else if(strcmp(result, "Exit") == 0) {
 
     }
+
+    printf("\033[2J");
 }

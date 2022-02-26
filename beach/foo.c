@@ -28,7 +28,7 @@ void d(struct arguments ar)
             {
                 "Current", "Install packages from the current directory",
                 "Other", "Install packages from another directory",
-                "Floppy", "Install packages from a floppy disk",
+                "Internet", "Install packages from the internet",
                 "Remove", "Remove packages that are currently installed.",
                 "Upgrade", "Upgrade packages that are currently installed.",
                 "List", "List installed packages.",
@@ -108,8 +108,16 @@ void d(struct arguments ar)
 
             work_configure("sus");
         }
-        else if (strcmp(result, "Floppy") == 0)
+        else if (strcmp(result, "Internet") == 0)
         {
+            init_dialog(stdin, stdout);
+            dialog_vars.backtitle = "beach";
+            dialog_inputbox("beach package manager (beach version 0.0.1)", "Package name, or URL", 17, 75, "", 0);
+            end_dialog();
+
+            printf("%s\n", dialog_vars.input_result);
+
+            
         }
         else if (strcmp(result, "Remove") == 0)
         {
@@ -127,9 +135,13 @@ void d(struct arguments ar)
         {
         }
     }
+    else
+    {
 
-    printf("%d\n", ar.argcount);
-    if(ar.argcount <= 0) printf("%s* %sQuiet beach installs, must require an argument.\n", RED, CYN);
+        printf("%d\n", ar.argcount);
+        if (ar.argcount <= 0)
+            printf("%s* %sQuiet beach installs, must require an argument.\n", RED, CYN);
+    }
 
     // printf("\033[2J");
 }

@@ -12,7 +12,7 @@ const char *argp_program_bug_address = "<bug-gnu-utils@gnu.org>";
 
 /* Program documentation. */
 static char doc[] =
-    "Beach -- a package manager some chill dudes.";
+    "beach -- a package manager some chill dudes.";
 
 /* A description of the arguments we accept. */
 static char args_doc[] = "[PACKAGES...]";

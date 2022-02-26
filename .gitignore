@@ -3,10 +3,8 @@ test
 beach/beach
 updater/updater
 libs/curl-7.80.0.tar.xz
-Qt/Installer/build*
 libs/json-c-build/
 libs/json-c
 install
 .vscode
 .ccls-cache
-Q-t

@@ -6,6 +6,7 @@
 #include <string.h>
 #include <dirent.h>
 #include <unistd.h>
+#include <sys/fcntl.h>
 
 #include "work.h"
 #include "arguments.h"
@@ -26,113 +27,76 @@ void d(struct arguments ar)
     {
         char *modes[] =
             {
-                "Current", "Install packages from the current directory",
-                "Other", "Install packages from another directory",
-                "Internet", "Install packages from the internet",
-                "Remove", "Remove packages that are currently installed.",
-                "Upgrade", "Upgrade packages that are currently installed.",
+                "Install", "Install packages.",
+                "Remove", "Remove packages.",
+                "Upgrade", "Upgrade packages.",
                 "List", "List installed packages.",
-                "View", "View the contents of a package.",
-                "Exit", "Exit the beach"};
+                //"View", "View the contents of a package.",
+                "Exit", "Exit beach"};
+
+        dialog_vars.keep_tite = true;
+        dialog_vars.backtitle = "beach";
+        dialog_vars.title = "beach";
 
         init_dialog(stdin, stdout);
         dialog_menu("beach package manager (beach version 0.0.1)", "Choose an option.", 17, 75, 7, LEN(modes) / 2, modes);
         end_dialog();
         char *result = dialog_vars.input_result;
-        printf("%s\n", result);
+        // printf("%s\n", result);
 
-        printf("\033[2J\033[H");
+        // printf("\033[2J\033[H");
 
-        if (strcmp(result, "Current") == 0)
+        if (strcmp(result, "Install") == 0)
         {
-            char msg[5000] = "Your current directory is:\n";
-            // strcat(msg, "\n");
-            getcwd(msg, sizeof(msg));
-            strcat(msg, "\n");
+            // Instalin
 
-            // Get all the files in the current directory and print them out IF they end in .pkg
+            dialog_vars.input_result = NULL;
 
-            DIR *dir;
-            struct dirent *ent;
-            if ((dir = opendir(".")) != NULL)
-            {
-                /* print all the files and directories within directory */
-                while ((ent = readdir(dir)) != NULL)
+            char *modes[] =
                 {
-                    if (strstr(ent->d_name, ".pkg") != NULL)
-                    {
-                        printf("%s\n", ent->d_name);
+                    "Internet", "Download package script from the internet.",
+                    "Local", "Install package script from a local file.",
+                    //"Upgrade", "Upgrade packages.",
+                    //"List", "List installed packages.",
+                    //"View", "View the contents of a package.",
+                    /*"Exit", "Exit beach"*/};
 
-                        int is_installed = 0;
+            init_dialog(stdin, stdout);
+            dialog_menu("beach package manager (beach version 0.0.1)", "How do you want to install?", 17, 75, 7, LEN(modes) / 2, modes);
+            end_dialog();
+            char *result_i = dialog_vars.input_result;
+            // printf("%s\n", result_i);
 
-                        // Get the contents of the file /etc/beach/installed and loop through it incase the filename is already in there
-                        // And loop through the contents line by line and and if the filename is in a line then print "END"
-                        FILE *fp;
-                        char *line = NULL;
-                        size_t len = 0;
-                        ssize_t read;
-                        fp = fopen("/etc/beach/installed", "r");
-                        if (fp == NULL)
-                            exit(EXIT_FAILURE);
-                        while ((read = getline(&line, &len, fp)) != -1)
-                        {
-                            if (strstr(line, ent->d_name) != NULL)
-                            {
-                                is_installed = 1;
-                            }
-                        }
+            // printf("\033[2J\033[H");
 
-                        if (is_installed == 0)
-                        {
-                            // Add the filename to the msg string in a new line
-                            strcat(msg, ent->d_name);
-                            strcat(msg, "\n");
-                        }
-                    }
-                }
-            }
-            else
+            if (strcmp(result_i, "Internet") == 0)
             {
-                /* could not open directory */
-                perror("");
-                return;
+                printf("Not implemented yet.\n");
             }
-            closedir(dir);
+            else if (strcmp(result_i, "Local") == 0)
+            {
+                dialog_vars.input_result = NULL;
 
-            init_dialog(stdin, stdout);
-            dialog_msgbox("beach package manager (beach version 0.0.1)", msg, 17, 75, 7);
-            end_dialog();
-        }
-        else if (strcmp(result, "Other") == 0)
-        {
+                // printf("Finding local...\n");
 
-            work_configure("sus");
-        }
-        else if (strcmp(result, "Internet") == 0)
-        {
-            init_dialog(stdin, stdout);
-            dialog_vars.backtitle = "beach";
-            dialog_inputbox("beach package manager (beach version 0.0.1)", "Package name, or URL", 17, 75, "", 0);
-            end_dialog();
+                init_dialog(stdin, stdout);
+                dialog_inputbox("beach package manager (beach version 0.0.1)", "Enter a path to the package.", 17, 75, "", 0);
+                end_dialog();
 
-            printf("%s\n", dialog_vars.input_result);
+                printf("%s\n", dialog_vars.input_result);
 
-            
-        }
-        else if (strcmp(result, "Remove") == 0)
-        {
-        }
-        else if (strcmp(result, "Upgrade") == 0)
-        {
-        }
-        else if (strcmp(result, "List") == 0)
-        {
-        }
-        else if (strcmp(result, "View") == 0)
-        {
-        }
-        else if (strcmp(result, "Exit") == 0)
-        {
+                char buffer[100];
+                char full_script[4096];
+
+                FILE *fp = fopen(dialog_vars.input_result, "r"); // do not use "rb"
+                while (fgets(buffer, sizeof(buffer), fp))
+                {
+                    //printf("-- %s", buffer);
+                    strcat(full_script, buffer);
+                }
+                fclose(fp);
+                printf("%s", full_script);
+            }
         }
     }
     else
@@ -145,3 +109,12 @@ void d(struct arguments ar)
 
     // printf("\033[2J");
 }
+
+/*
+init_dialog(stdin, stdout);
+            dialog_vars.backtitle = "beach";
+            dialog_inputbox("beach package manager (beach version 0.0.1)", "Package name, or URL", 17, 75, "", 0);
+            end_dialog();
+
+            printf("%s\n", dialog_vars.input_result);
+*/

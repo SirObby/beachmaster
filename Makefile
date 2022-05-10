@@ -1,23 +1,28 @@
 OBJS = ${wildcard *.o} \
 		${wildcard beach/*.o} \
-		${wildcard updater/*.o}
+		${wildcard installer/*.o}
 
-all: beach updater
+all: beach installer livecd
 
 clean:
-	rm -f ${OBJS} ./beach/beach ./updater/updater
+	rm -f ${OBJS} ./beach/beach ./installer/installer
 
 beach:
 	${MAKE} --no-print-directory -C ./beach/ clean
 	${MAKE} --no-print-directory -C ./beach
 .PHONY	: beach
 
-updater:
-	${MAKE} --no-print-directory -C ./updater/ clean
-	${MAKE} --no-print-directory -C ./updater
+installer:
+	${MAKE} --no-print-directory -C ./installer/ clean
+	${MAKE} --no-print-directory -C ./upinstallerdater
 .PHONY	: updater
+
+livecd:
+	${MAKE} --no-print-directory -C ./livecd/ clean
+	${MAKE} --no-print-directory -C ./livecd
+.PHONY : livecd
 
 install:
 	${MAKE} --no-print-directory -C ./beach/ install
-	${MAKE} --no-print-directory -C ./updater/ install
+	${MAKE} --no-print-directory -C ./installer/ install
 .PHONY	: install

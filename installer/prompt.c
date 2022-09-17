@@ -50,7 +50,15 @@ int options(char *message, char *options[])
     if (input < 0 || input > 1)
     {
         printf("Invalid option.\n");
-        //return options(message, options, c);
+        // return options(message, options, c);
     }
     return input;
 }
+char *get_input(const char *message)
+{
+    
+    return "";
+    //return alline;
+    // system(in);
+    //return in;
+};

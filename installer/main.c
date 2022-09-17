@@ -29,13 +29,9 @@ int main(int argc, char const *argv[])
         installation:
         printf("Wait a moment.\n");
         if(prompt("Do you want to partition your drives?")) {
-            char *options_[2] = {"fdisk", "cfdisk"};
-            if(options("Select your favoured partitioning tool", options_) == 0) {
-                system("fdisk");
-            } else {
-                system("cfdisk");
-            }
+            printf("%s", get_input("Enter the command to partition your drives:"));
         }
+
 
     }
     // This program should be run in a live cd, likely by the Beachmaster LiveCD
